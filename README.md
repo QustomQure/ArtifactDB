@@ -1,10 +1,13 @@
-*Currently updating the readme.*
-
-# ArtifactDB
-The purpose of this repository is to provide an easy access to assets and information for developers creating & updating websites/tools for the game [Artifact by Valve](http://playartifact.com). Hopefully with enough people contributing we can fill out every card and keep it updated to track balance changes.
+# ArtifactDB [![Build Status](https://travis-ci.com/ottah/ArtifactDB.svg?branch=master)](https://travis-ci.com/ottah/ArtifactDB)
+The purpose of this repository is to provide easy access to assets and information about cards for developers creating websites/tools for the game [Artifact by Valve](http://playartifact.com). Hopefully with enough people contributing we can fill out every card and keep it updated to track balance changes.
 (Valve owns all art assets)
 
 Currently there is all the known cards with art available for use, with a JSON manifest that can easily be integrated into your website/tool. If you spot something missing or wrong make a pull request!
+
+# Installation
+`npm i artifactdb`
+
+Or download the zip via Github. 
 
 # How can you contribute?
 - Add new cards when they are announced
@@ -70,4 +73,5 @@ Card rarity icons are available as SVG/PNG in the /card/icon/base_set_rarity fol
 ## Full Card Artwork
 The path to get full artwork is /fullcardart/**card_name**.png
 where **card_name** is the card's name lowercase with spaces repaced with _ and ' replaced with -. E.g. _Keenfolk Turret_ = _keenfolk_turret_
+
 ![Full artwork card](https://raw.githubusercontent.com/ottah/ArtifactDB/master/fullcardart/keenfolk_turret.png "Full artwork for Keenfolk Turret")

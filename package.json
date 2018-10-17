@@ -1,0 +1,33 @@
+{
+  "name": "artifactdb",
+  "version": "1.1.0",
+  "description": "Repository of Artifact cards & artwork by Valve.",
+  "scripts": {
+    "build": "node build/build.js cards-manifest.json && exit 0",
+    "test": "jsonlint cards-manifest.json -q -c"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ottah/ArtifactDB.git"
+  },
+  "keywords": [
+    "artifact",
+    "valve",
+    "card",
+    "game"
+  ],
+  "author": "Theo Ottah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ottah/ArtifactDB/issues"
+  },
+  "homepage": "https://github.com/ottah/ArtifactDB#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jsonfile": "^5.0.0",
+    "pre-commit": "^1.2.2"
+  }
+}
